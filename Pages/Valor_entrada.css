@@ -1,0 +1,113 @@
+/* Comoço da Main */
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+body{
+    position: relative;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 900px;
+}
+
+.title{
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    width: 100%;
+    padding: 1.6rem  1rem;
+
+    
+    color: #FFFF;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.title.entrada{
+    background-color: #27AE60;
+}
+
+.title.saida{
+    background-color: #EB5757;
+
+}
+
+.title > a{
+    position: absolute;
+    top: 1.4rem;
+    left: 5%;
+
+    width: 28px;
+
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(351deg) brightness(114%) contrast(102%);
+}
+
+.title div{
+    margin-top: 1.4rem;
+    
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+
+.title div img{
+    width: 1rem;
+    
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(351deg) brightness(114%) contrast(102%);
+}
+
+/* Começo Formulário */
+
+.form_valor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 348px;
+    width: 80%;
+}
+
+.btn{
+    margin-right: 1rem;
+}
+
+/* Fim Formulário */
+
+/* Fim da Main */

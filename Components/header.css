@@ -1,0 +1,124 @@
+/* Começo Head e NavBar */
+
+nav {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem 3rem;
+
+    color: var(--bs-light);
+}
+
+.box_profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.obj_financeiro_tag{
+    background-color: var(--bs-light);
+    color: var(--bs-dark);
+    padding: 0.4rem 1rem;
+    border-radius: 64px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style-type: none
+}
+
+.profile_pic{
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
+
+    background-image: url('../Img/profile.jpeg');
+    background-position: center;
+    background-size: cover; 
+}
+
+/* Btn Toggle */
+
+.box_toggle{
+    width: 28px; 
+    display: none;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(351deg) brightness(114%) contrast(102%);
+    cursor: pointer;
+}
+
+.ativo{
+    display: flex;
+}
+
+/* Fim Head e NavBar */
+
+/* Resposividade Header */
+
+@media (max-width: 575.98px) { 
+    nav{
+        padding: 1rem;
+    }
+
+    .profile_pic{
+        min-width: 72px;
+        min-height: 72px
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .box_toggle{
+        display: block;
+    }
+
+    nav ul{
+        /* opacity: 0; */
+        position: absolute;
+        display: none;
+        top: 100%;
+        right: 0;
+
+        box-sizing: border-box;
+        width: 240px;
+        color: #000;
+        z-index: 99999 !important;
+
+        padding: 0.8rem 0px;
+        background-color: #fff;
+
+        text-align: center; 
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column !important;
+
+        border-radius: 0px 0px 1rem 1rem;
+    }
+
+    nav ul li{
+        width: 220px;
+        padding: 0.4rem 0px;
+        border-radius: 0.4rem;
+    }
+
+    nav ul li:hover{
+        background-color: var(--bs-blue);
+        color: var(--bs-light);
+    }
+}
+
+@media (max-width: 991.98px) { 
+    nav{
+        padding: 1rem;
+    }
+}
+
+/* @media (max-width: 1199.98px) { ... } */
+
+/* @media (max-width: 1399.98px) { ... } */

@@ -1,0 +1,44 @@
+
+/* Começo Footer */
+
+footer{ 
+    padding: 1rem;
+    
+    position: absolute;
+    bottom: 0; right: 0; left: 0;   
+
+    display: flex;
+    justify-content: center;
+
+    flex-direction: row;
+    gap: 6rem;
+
+    color: var(--bs-light);
+    width: 100%;
+    background-color: var(--bs-dark);
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul .subtitle{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--bs-danger);
+}
+
+footer ul.navbar-nav.brand{
+    display: flex; 
+    flex-direction: column;   
+    gap: 0.6rem;
+}
+
+footer ul li img{
+    width: 32px;
+    filter: invert(26%) sepia(91%) saturate(3613%) hue-rotate(340deg) brightness(94%) contrast(83%);
+}
+
+/* Fim Footer */

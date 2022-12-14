@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="./Valor_entrada.css">
+    <link rel="stylesheet" href="../Css/reset.css">
+    <link rel="stylesheet" href="./Responsividade.css">
+
+    <!-- Link Components -->
+    <link rel="stylesheet" href="../Components/footer.css">
+    <link rel="stylesheet" href="../Components/header.css">
+    
+    <!-- Link do Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <title>Fintech</title>
+</head>
+
+<body>
+
+    <!-- Começo header -->  
+    <header>
+        <nav class="bg-primary">
+            <div class="box_profile">
+                <div class="profile_pic">
+                    <img src="" alt="">
+                </div>
+
+                <span class="obj_financeiro_tag"> Objetivo Financeiro: Casa Própria </span>
+
+            </div>
+
+            <div class="box_toggle">
+                <img id="btn-toggle" class="btn-toggle" src="../Img/bars-solid.svg" alt="">
+            </div>
+
+            <ul class="" id="navbar">
+                <li class="">
+                    <a href="../index.html" class="nav-link"> Inicial </a>
+                </li>
+
+                <li class="">
+                    <a href="#" class="nav-link"> Transações</a>
+                </li>
+
+                <li class="">
+                    <a href="#" class="nav-link"> Objetivos</a>
+                </li>
+
+                <li class="">
+                    <a href="#" class="nav-link"> Configurações</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fim header -->
+
+
+    <!-- Começo Parte Principal -->
+    <main class="">
+        <section class="title entrada">
+            <a href="../index.html"> <img src="../Img/arrow-left-solid.svg"> </a>
+
+            <h1> Cadastradar Entrada </h1>
+
+            <div>
+                <img src="../Img/chevron-left-solid.svg" alt="">
+                <h4> Outubro </h4>
+                <img src="../Img/chevron-right-solid.svg" alt="">
+            </div>
+        </section>
+
+        <section class="form_valor">
+            <form class="form form-control mt-5" action="" method="get">
+                <label class="form-label" for="title"> Title </label>
+                <input class="form-control" name="title" id="title" type="text" placeholder="Ex:. O que é esse valor de entrada">
+
+                <label class="form-label" for="valor_entrada"> Valor de Entrada </label>
+                <input class="form-control" name="valor_entrada" id="valor_entrada" type="number" placeholder="R$150,00">
+
+                <label class="form-label" for="descricao"> Descrição </label>
+                <input class="form-control" name="descricao" id="descricao" type="text" placeholder="Descreva algo relevante">
+
+                <label class="form-label" for="select_categoria"> Categoria de Entrada </label>
+                <select class="form-control" name="select_categoria" id="select_categoria">
+                    <option value="trabalho"> Trabalho </option>
+                    <option value="venda_autonoma"> Venda Autonoma</option>
+                    <option value="investimento"> investimentos </option>
+                    <option value="poupanca">Poupanca</option>
+                </select>
+
+                <label class="form-label" for="data"> Data </label>
+                <input class="form-control" name="data" id="data" type="date">
+
+                <button type="submit" class="btn btn-primary mt-3 mb-3"> Cadastrar Entrada </button>
+                <button type="reset" class="btn btn-danger mt-3 mb-3"> Limpar </button>
+
+            </form>
+        </section>
+    </main>
+    <!-- Fim Parte Principal -->
+
+    <footer>
+        <ul class="navbar-nav">
+            <li class="subtitle">
+                Links
+            </li>
+
+            <li class="">
+                <a href="#" class="nav-link"> Inicial </a>
+            </li>
+
+            <li class="">
+                <a href="#" class="nav-link"> Transações</a>
+            </li>
+
+            <li class="">
+                <a href="#" class="nav-link"> Objetivos</a>
+            </li>
+
+            <li class="">
+                <a href="#" class="nav-link"> Configurações</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav brand">
+            <li class="subtitle">
+                Redes Sociais
+            </li>
+
+            <li>
+                <img src="../Img/square-instagram.svg" alt="">
+            </li>
+
+            <li>
+                <img src="../Img/linkedin.svg" alt="">
+            </li>
+
+            <li>
+                <img src="../Img/youtube.svg" alt="">
+            </li>
+        </ul>
+    </footer>
+
+<!-- JS -->
+<script src="../Js/index.js"></script>
+</body>
+
+</html>
